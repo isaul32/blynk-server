@@ -264,7 +264,7 @@ public class MobileAndHttpsServer extends BaseServer {
                                 .addLast("AMessageDecoder", new MobileMessageDecoder(holder.stats, holder.limits))
                                 .addLast("AMessageEncoder", new MobileMessageEncoder(holder.stats))
                                 .addLast("AGetServer", getServerHandler)
-                                .addLast("ARegister", registerHandler)
+                                //.addLast("ARegister", registerHandler)
                                 .addLast("ALogin", appLoginHandler)
                                 .addLast("AResetPass", resetPasswordHandler)
                                 .addLast("AShareLogin", appShareLoginHandler)
